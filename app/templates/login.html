@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #f2f6fb;
+      --panel: #ffffff;
+      --ink: #0c2d3d;
+      --muted: #6e8596;
+      --pri: #0b73b5;
+      --pri-600:#095f95;
+      --border:#e2edf6;
+      --shadow:0 10px 30px rgba(12,45,61,.08);
+      --radius:16px;
+    }
+    *{box-sizing:border-box;}
+    html, body{height:100%; margin:0; font-family:"Inter","IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial; background:var(--bg); color:var(--ink);}
+    .login-wrapper{
+      display:flex; justify-content:center; align-items:center; height:100%;
+    }
+    .login-card{
+      background:var(--panel); padding:32px 28px; border-radius:var(--radius); box-shadow:var(--shadow); width:100%; max-width:420px;
+      text-align:center;
+    }
+    .login-card h1{
+      margin:0 0 12px; font-size:1.6rem; color:var(--pri); font-weight:800;
+    }
+    .login-card p{
+      margin:0 0 24px; color:var(--muted); font-weight:600;
+    }
+    .field{
+      display:flex; flex-direction:column; gap:8px; margin-bottom:16px; text-align:left;
+    }
+    .label{font-weight:700; font-size:.95rem;}
+    .input{
+      padding:12px; border-radius:12px; border:1px solid var(--border); outline:none; font-weight:600;
+      transition:border .15s ease, box-shadow .15s ease;
+    }
+    .input:focus{border-color:#bfe6ff; box-shadow:0 0 0 4px #e8f5ff;}
+    .btn{
+      width:100%; padding:12px; border:none; border-radius:12px; background:var(--pri); color:#fff; font-weight:800; cursor:pointer; transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+    }
+    .btn:hover{transform:translateY(-1px); background:var(--pri-600); box-shadow:0 10px 22px rgba(9,93,144,.18);}
+    .error{
+      color:var(--danger,#c53939); margin-bottom:12px; font-weight:700;
+    }
+    @media (max-width:480px){ .login-card{padding:24px 20px;} }
+  </style>
+</head>
+<body>
+  <div class="login-wrapper">
+    <div class="login-card">
+      <h1>Login Panel</h1>
+
+      {% if error %}
+      <div class="error">{{ error }}</div>
+      {% endif %}
+
+      <form method="POST" action="{{ url_for('login') }}">
+        <div class="field">
+          <label class="label" for="patient_name">Patient Name</label>
+          <input type="text" id="patient_name" name="patient_name" class="input" placeholder="Enter your full name" required />
+        </div>
+        <button type="submit" class="btn">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1209 @@
+{
+  "Child": {
+    "Acute Otitis Media": {
+      "mild": {
+        "remedies": [
+          "Avoid water entry into ear and use warm compress for pain relief.",
+          "Give age-appropriate pain relief as advised."
+        ],
+        "suggestion": "If fever or ear discharge continues beyond 48 hours, see a doctor."
+      },
+      "moderate": {
+        "remedies": [
+          "Keep ear dry and follow any prescribed ear drops.",
+          "Avoid loud noises and maintain rest."
+        ],
+        "suggestion": "See an ENT specialist for assessment if symptoms persist."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "If there is severe pain, high fever, or swelling, seek urgent medical care."
+      }
+    },
+    "Anemia (nutritional)": {
+      "mild": {
+        "remedies": [
+          "Increase iron-rich foods (leafy greens, lentils, lean meat if non-vegetarian).",
+          "Consider dietary vitamin C to improve iron absorption."
+        ],
+        "suggestion": "Check hemoglobin and iron studies; consider supplements if advised."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow iron supplementation as prescribed and eat iron-rich diet.",
+          "Avoid substances that hinder iron absorption like tea with meals."
+        ],
+        "suggestion": "See a doctor for investigation of cause and treatment plan."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe anemia may need urgent medical attention or transfusion; seek care promptly."
+      }
+    },
+    "Bacterial Meningitis (pediatric)": {
+      "mild": {
+        "remedies": [
+          "Keep the patient comfortable and hydrated.",
+          "Do not give anything orally if there is reduced consciousness."
+        ],
+        "suggestion": "Meningitis symptoms need prompt medical attention and testing."
+      },
+      "moderate": {
+        "remedies": [
+          "Provide supportive care as advised by clinicians.",
+          "Monitor for seizures or reduced consciousness."
+        ],
+        "suggestion": "Urgent hospital assessment and lumbar puncture/testing are usually required."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Suspected meningitis is a medical emergency. Seek immediate hospital care."
+      }
+    },
+    "Bronchiolitis (RSV)": {
+      "mild": {
+        "remedies": [
+          "Maintain rest and hydration for bronchiolitis (rsv).",
+          "Avoid strenuous activity and follow basic self-care measures.",
+          "Follow a light, balanced diet."
+        ],
+        "suggestion": "This appears to be a mild case of Bronchiolitis (RSV). Monitor symptoms and consult a doctor if they persist."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow medical advice for bronchiolitis (rsv) and maintain supportive care.",
+          "Avoid triggers and keep good nutrition."
+        ],
+        "suggestion": "This appears to be a moderate case of Bronchiolitis (RSV). Please consult a clinician for further evaluation."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "This appears to be severe. Home remedies are not recommended. Seek immediate medical attention."
+      }
+    },
+    "Chickenpox": {
+      "mild": {
+        "remedies": [
+          "Keep skin clean, cut nails short, and use calamine for itch relief.",
+          "Ensure fluids and rest."
+        ],
+        "suggestion": "If fever persists or rash becomes infected, see a doctor."
+      },
+      "moderate": {
+        "remedies": [
+          "Prevent scratching and maintain hygiene; consider antiviral if advised."
+        ],
+        "suggestion": "See a pediatrician for antiviral or symptomatic care."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe illness or widespread infection requires emergency medical attention."
+      }
+    },
+    "Childhood Leukemia": {
+      "mild": {
+        "remedies": [
+          "Maintain nutrition and avoid infections.",
+          "Ensure vaccinations are updated as advised by a doctor."
+        ],
+        "suggestion": "Prompt specialist referral is needed for diagnosis and treatment planning."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow specialist guidance and maintain infection precautions.",
+          "Ensure regular monitoring of blood counts."
+        ],
+        "suggestion": "Consult a hematologist/oncologist for definitive management."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Suspected severe blood disorder requires urgent specialist care."
+      }
+    },
+    "Common Cold": {
+      "mild": {
+        "remedies": [
+          "Maintain rest and hydration for common cold.",
+          "Avoid strenuous activity and follow basic self-care measures.",
+          "Follow a light, balanced diet."
+        ],
+        "suggestion": "This appears to be a mild case of Common Cold. Monitor symptoms and consult a doctor if they persist."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow medical advice for common cold and maintain supportive care.",
+          "Avoid triggers and keep good nutrition."
+        ],
+        "suggestion": "This appears to be a moderate case of Common Cold. Please consult a clinician for further evaluation."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "This appears to be severe. Home remedies are not recommended. Seek immediate medical attention."
+      }
+    },
+    "Conjunctivitis": {
+      "mild": {
+        "remedies": [
+          "Keep the eye clean with clean water or saline.",
+          "Avoid touching eyes and maintain hand hygiene.",
+          "Use cold compresses for comfort."
+        ],
+        "suggestion": "If pain, vision change, or pus increases, see an eye doctor."
+      },
+      "moderate": {
+        "remedies": [
+          "Avoid contact lenses until resolved.",
+          "Use prescribed antibiotic drops if advised by a doctor."
+        ],
+        "suggestion": "See a clinician for topical treatment and follow-up."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe eye pain or vision change needs immediate ophthalmology care."
+      }
+    },
+    "Gastroenteritis": {
+      "mild": {
+        "remedies": [
+          "Maintain oral rehydration (ORS) and small frequent sips.",
+          "Rest and avoid heavy meals for a short period.",
+          "Use bland diet (rice, bananas) until better."
+        ],
+        "suggestion": "If dehydration signs occur or symptoms last >48 hours, see a doctor."
+      },
+      "moderate": {
+        "remedies": [
+          "Continue ORS and consider medical antiemetics as advised.",
+          "Avoid dairy and spicy foods temporarily."
+        ],
+        "suggestion": "Arrange medical evaluation and stool testing if symptoms persist."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe dehydration or bloody stools need immediate hospital care."
+      }
+    },
+    "Hand-Foot-and-Mouth Disease": {
+      "mild": {
+        "remedies": [
+          "Ensure fluid intake, give paracetamol for fever, and keep mouth clean.",
+          "Offer soft foods if mouth ulcers present."
+        ],
+        "suggestion": "If the child cannot drink or shows worsening symptoms, see a pediatrician."
+      },
+      "moderate": {
+        "remedies": [
+          "Maintain hydration and monitor for dehydration signs.",
+          "Isolate to prevent spread to others."
+        ],
+        "suggestion": "See a doctor if symptoms persist beyond a few days."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe dehydration or neurological signs require immediate emergency care."
+      }
+    },
+    "Impetigo/Cellulitis (skin)": {
+      "mild": {
+        "remedies": [
+          "Keep the area clean and elevated if possible.",
+          "Apply clean dressings and avoid squeezing the area."
+        ],
+        "suggestion": "If the area becomes more red, warm, or tender, see a doctor for possible antibiotics."
+      },
+      "moderate": {
+        "remedies": [
+          "Continue wound care and keep area covered.",
+          "Avoid self-treatment with ointments unless advised."
+        ],
+        "suggestion": "Medical review for oral antibiotics and wound assessment is recommended."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Rapidly spreading infection or systemic signs require emergency care."
+      }
+    },
+    "Malaria (pediatric)": {
+      "mild": {
+        "remedies": [
+          "Rest and maintain fluids.",
+          "Use mosquito protection to prevent further bites."
+        ],
+        "suggestion": "If fever occurs in cycles or with chills, get a malaria test promptly."
+      },
+      "moderate": {
+        "remedies": [
+          "Continue rest and seek medical anti-malarial treatment as advised."
+        ],
+        "suggestion": "Positive test requires prompt treatment under medical supervision."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe malaria is life-threatening — seek emergency care immediately."
+      }
+    },
+    "Measles": {
+      "mild": {
+        "remedies": [
+          "Isolate the child to prevent spread and give fluids.",
+          "Use paracetamol for fever; keep skin comfortable."
+        ],
+        "suggestion": "Check immunization history and see a pediatrician for guidance."
+      },
+      "moderate": {
+        "remedies": [
+          "Continue supportive care and monitor for complications like ear infections."
+        ],
+        "suggestion": "See a pediatrician for evaluation and management."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe complications need hospital care immediately."
+      }
+    },
+    "Neonatal Sepsis": {
+      "mild": {
+        "remedies": [
+          "Keep the newborn warm and ensure feeding is adequate.",
+          "Monitor temperature and feeding closely."
+        ],
+        "suggestion": "Any sign of poor feeding or fever in a newborn warrants prompt pediatric assessment."
+      },
+      "moderate": {
+        "remedies": [
+          "Ensure supportive care and follow pediatric advice for antibiotics if started."
+        ],
+        "suggestion": "Seek specialist neonatal care for further evaluation."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Newborn sepsis is an emergency—seek immediate hospital care."
+      }
+    },
+    "Pediatric Tuberculosis": {
+      "mild": {
+        "remedies": [
+          "Cover coughs and avoid close contact, rest and good nutrition.",
+          "Do not self-medicate; follow clinic advice."
+        ],
+        "suggestion": "Persistent cough (>2 weeks) requires TB testing at a clinic (sputum/GeneXpert)."
+      },
+      "moderate": {
+        "remedies": [
+          "Maintain nutrition and follow any prescribed medicines.",
+          "Avoid smoking and crowded places."
+        ],
+        "suggestion": "See a doctor for formal testing and start treatment if positive."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "If breathing is very difficult or high fevers persist, seek urgent medical care."
+      }
+    },
+    "Pertussis": {
+      "mild": {
+        "remedies": [
+          "Maintain rest and hydration for pertussis.",
+          "Avoid strenuous activity and follow basic self-care measures.",
+          "Follow a light, balanced diet."
+        ],
+        "suggestion": "This appears to be a mild case of Pertussis. Monitor symptoms and consult a doctor if they persist."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow medical advice for pertussis and maintain supportive care.",
+          "Avoid triggers and keep good nutrition."
+        ],
+        "suggestion": "This appears to be a moderate case of Pertussis. Please consult a clinician for further evaluation."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "This appears to be severe. Home remedies are not recommended. Seek immediate medical attention."
+      }
+    },
+    "Pneumonia": {
+      "mild": {
+        "remedies": [
+          "Rest at home and keep hydrated.",
+          "Use warm fluids and steam inhalation for comfort.",
+          "Monitor breathing rate and fever regularly."
+        ],
+        "suggestion": "If fever or cough persists beyond 48–72 hours, see a doctor for chest evaluation and possible antibiotics."
+      },
+      "moderate": {
+        "remedies": [
+          "Continue rest and hydration.",
+          "Use prescribed fever control and follow inhalation measures.",
+          "Avoid strenuous activity until better."
+        ],
+        "suggestion": "Arrange a medical review and chest X‑ray; antibiotics may be required."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe respiratory symptoms need emergency care. Seek immediate medical attention."
+      }
+    },
+    "Rotavirus Infection": {
+      "mild": {
+        "remedies": [
+          "Maintain rest and hydration for rotavirus infection.",
+          "Avoid strenuous activity and follow basic self-care measures.",
+          "Follow a light, balanced diet."
+        ],
+        "suggestion": "This appears to be a mild case of Rotavirus Infection. Monitor symptoms and consult a doctor if they persist."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow medical advice for rotavirus infection and maintain supportive care.",
+          "Avoid triggers and keep good nutrition."
+        ],
+        "suggestion": "This appears to be a moderate case of Rotavirus Infection. Please consult a clinician for further evaluation."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "This appears to be severe. Home remedies are not recommended. Seek immediate medical attention."
+      }
+    },
+    "UTI (pediatric)": {
+      "mild": {
+        "remedies": [
+          "Increase fluid intake and avoid irritant drinks (coffee, alcohol).",
+          "Maintain good personal hygiene."
+        ],
+        "suggestion": "If burning on urination persists or you have fever, see a doctor for urine testing."
+      },
+      "moderate": {
+        "remedies": [
+          "Continue fluids and follow any prescribed antibiotics.",
+          "Avoid holding urine for long periods."
+        ],
+        "suggestion": "Medical evaluation and urine culture may be needed to guide treatment."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "High fever with flank pain needs urgent medical attention."
+      }
+    }
+  },
+  "Adult": {
+    "Anemia (adult)": {
+      "mild": {
+        "remedies": [
+          "Increase iron-rich foods (leafy greens, lentils, lean meat if non-vegetarian).",
+          "Consider dietary vitamin C to improve iron absorption."
+        ],
+        "suggestion": "Check hemoglobin and iron studies; consider supplements if advised."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow iron supplementation as prescribed and eat iron-rich diet.",
+          "Avoid substances that hinder iron absorption like tea with meals."
+        ],
+        "suggestion": "See a doctor for investigation of cause and treatment plan."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe anemia may need urgent medical attention or transfusion; seek care promptly."
+      }
+    },
+    "Appendicitis": {
+      "mild": {
+        "remedies": [
+          "Maintain rest and hydration for appendicitis.",
+          "Avoid strenuous activity and follow basic self-care measures.",
+          "Follow a light, balanced diet."
+        ],
+        "suggestion": "This appears to be a mild case of Appendicitis. Monitor symptoms and consult a doctor if they persist."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow medical advice for appendicitis and maintain supportive care.",
+          "Avoid triggers and keep good nutrition."
+        ],
+        "suggestion": "This appears to be a moderate case of Appendicitis. Please consult a clinician for further evaluation."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "This appears to be severe. Home remedies are not recommended. Seek immediate medical attention."
+      }
+    },
+    "Asthma": {
+      "mild": {
+        "remedies": [
+          "Avoid triggers such as smoke, dust, and strong odors.",
+          "Use short-acting inhaler if already prescribed.",
+          "Keep calm and sit upright to ease breathing."
+        ],
+        "suggestion": "If symptoms recur, note triggers and see a clinician for inhaler review."
+      },
+      "moderate": {
+        "remedies": [
+          "Use prescribed inhaler and spacer correctly.",
+          "Limit physical exertion and avoid known triggers.",
+          "Ensure hydration and rest."
+        ],
+        "suggestion": "See a doctor for review and possible adjustment of inhaled therapy."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe breathlessness is an emergency. Seek immediate medical attention."
+      }
+    },
+    "COPD/Chronic Bronchitis": {
+      "mild": {
+        "remedies": [
+          "Avoid smoke and air pollutants.",
+          "Do gentle walking and breathing exercises.",
+          "Keep inhalers and rescue medication available if prescribed."
+        ],
+        "suggestion": "If cough or breathlessness increases, consult a respiratory specialist."
+      },
+      "moderate": {
+        "remedies": [
+          "Use inhalers and follow breathing techniques.",
+          "Avoid exertion and maintain good nutrition."
+        ],
+        "suggestion": "Arrange a medical review and spirometry testing as advised."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe COPD exacerbation needs urgent hospital care. Seek emergency services."
+      }
+    },
+    "COVID-19": {
+      "mild": {
+        "remedies": [
+          "Isolate as per local guidance, rest, and hydrate.",
+          "Use paracetamol for fever if needed and follow breathing exercises.",
+          "Monitor oxygen levels at home if pulse oximeter available."
+        ],
+        "suggestion": "If symptoms persist or oxygen drops below 94%, contact a healthcare provider for testing and care."
+      },
+      "moderate": {
+        "remedies": [
+          "Continue isolation and supportive treatment.",
+          "Keep track of symptoms and do pulse oximetry monitoring if possible."
+        ],
+        "suggestion": "Seek medical review; antiviral or other treatments may be advised depending on risk factors."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe COVID-like illness requires urgent hospital assessment. Go to emergency care."
+      }
+    },
+    "Chronic Kidney Disease": {
+      "mild": {
+        "remedies": [
+          "Limit salt and high-protein supplements; stay hydrated with guidance.",
+          "Avoid NSAIDs unless prescribed."
+        ],
+        "suggestion": "Check basic kidney blood tests and urine tests as recommended."
+      },
+      "moderate": {
+        "remedies": [
+          "Adopt kidney-friendly diet and follow medical advice closely.",
+          "Monitor fluid intake as advised by clinician."
+        ],
+        "suggestion": "See a nephrologist for further evaluation and management."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe kidney issues require urgent specialist and hospital care."
+      }
+    },
+    "Dengue": {
+      "mild": {
+        "remedies": [
+          "Rest, maintain fluids, and use paracetamol for fever.",
+          "Avoid NSAIDs like ibuprofen which increase bleeding risk."
+        ],
+        "suggestion": "Monitor for bleeding signs and seek medical advice for tests (CBC) if fever persists."
+      },
+      "moderate": {
+        "remedies": [
+          "Ensure adequate oral fluids and frequent monitoring of symptoms.",
+          "Avoid NSAIDs and follow local medical advice."
+        ],
+        "suggestion": "Seek medical assessment and blood tests to monitor platelet counts."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Suspected severe dengue requires urgent hospital admission for monitoring and supportive care."
+      }
+    },
+    "Depression/Anxiety": {
+      "mild": {
+        "remedies": [
+          "Maintain social contact, regular sleep, and light exercise.",
+          "Practice basic breathing or relaxation techniques."
+        ],
+        "suggestion": "If low mood persists more than two weeks, speak to a mental health professional."
+      },
+      "moderate": {
+        "remedies": [
+          "Establish daily routines and consider counseling.",
+          "Avoid alcohol and substances that worsen mood."
+        ],
+        "suggestion": "Seek a formal assessment from a counselor or psychiatrist for therapy/medication options."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "If there is risk to life or severe symptoms, seek urgent mental health care or emergency services."
+      }
+    },
+    "Diabetes": {
+      "mild": {
+        "remedies": [
+          "Reduce simple sugars and snacks, increase water intake.",
+          "Take light daily walks after meals."
+        ],
+        "suggestion": "Check fasting and random blood sugars and schedule a follow-up with your doctor."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow a structured low-glycemic diet and regular exercise.",
+          "Avoid sugary beverages and processed foods."
+        ],
+        "suggestion": "See a physician for medication review and regular monitoring (HbA1c)."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe hyperglycemia or complications need urgent hospital care."
+      }
+    },
+    "Gastritis/Peptic Ulcer": {
+      "mild": {
+        "remedies": [
+          "Maintain rest and hydration for gastritis/peptic ulcer.",
+          "Avoid strenuous activity and follow basic self-care measures.",
+          "Follow a light, balanced diet."
+        ],
+        "suggestion": "This appears to be a mild case of Gastritis/Peptic Ulcer. Monitor symptoms and consult a doctor if they persist."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow medical advice for gastritis/peptic ulcer and maintain supportive care.",
+          "Avoid triggers and keep good nutrition."
+        ],
+        "suggestion": "This appears to be a moderate case of Gastritis/Peptic Ulcer. Please consult a clinician for further evaluation."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "This appears to be severe. Home remedies are not recommended. Seek immediate medical attention."
+      }
+    },
+    "Hepatitis (viral/chronic)": {
+      "mild": {
+        "remedies": [
+          "Avoid alcohol and fatty foods; rest and hydrate.",
+          "Maintain a light, balanced diet and avoid unnecessary medicines."
+        ],
+        "suggestion": "Get liver function tests and viral markers as advised by a clinician."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow a liver-friendly diet and avoid alcohol completely.",
+          "Ensure adequate rest and nutrition."
+        ],
+        "suggestion": "See a doctor for liver tests and specialist referral if needed."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Signs of liver failure require immediate hospital care."
+      }
+    },
+    "Hypertension": {
+      "mild": {
+        "remedies": [
+          "Maintain rest and hydration for hypertension.",
+          "Avoid strenuous activity and follow basic self-care measures.",
+          "Follow a light, balanced diet."
+        ],
+        "suggestion": "This appears to be a mild case of Hypertension. Monitor symptoms and consult a doctor if they persist."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow medical advice for hypertension and maintain supportive care.",
+          "Avoid triggers and keep good nutrition."
+        ],
+        "suggestion": "This appears to be a moderate case of Hypertension. Please consult a clinician for further evaluation."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "This appears to be severe. Home remedies are not recommended. Seek immediate medical attention."
+      }
+    },
+    "Ischemic Heart Disease": {
+      "mild": {
+        "remedies": [
+          "Avoid heavy exertion and reduce stress.",
+          "Follow a heart-healthy diet low in saturated fats."
+        ],
+        "suggestion": "If chest discomfort recurs, get cardiac evaluation including ECG and risk factor review."
+      },
+      "moderate": {
+        "remedies": [
+          "Rest and avoid exertion; follow cardiology advice if on medications.",
+          "Control salt and fluid intake per doctor recommendations."
+        ],
+        "suggestion": "Arrange cardiology review and necessary tests (ECG, troponin, stress test) as advised."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe chest pain or suspected heart attack is an emergency. Call emergency services immediately."
+      }
+    },
+    "Liver Disease (chronic/hepatic)": {
+      "mild": {
+        "remedies": [
+          "Avoid alcohol and fatty foods; rest and hydrate.",
+          "Maintain a light, balanced diet and avoid unnecessary medicines."
+        ],
+        "suggestion": "Get liver function tests and viral markers as advised by a clinician."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow a liver-friendly diet and avoid alcohol completely.",
+          "Ensure adequate rest and nutrition."
+        ],
+        "suggestion": "See a doctor for liver tests and specialist referral if needed."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Signs of liver failure require immediate hospital care."
+      }
+    },
+    "Pneumonia (adult)": {
+      "mild": {
+        "remedies": [
+          "Rest at home and keep hydrated.",
+          "Use warm fluids and steam inhalation for comfort.",
+          "Monitor breathing rate and fever regularly."
+        ],
+        "suggestion": "If fever or cough persists beyond 48–72 hours, see a doctor for chest evaluation and possible antibiotics."
+      },
+      "moderate": {
+        "remedies": [
+          "Continue rest and hydration.",
+          "Use prescribed fever control and follow inhalation measures.",
+          "Avoid strenuous activity until better."
+        ],
+        "suggestion": "Arrange a medical review and chest X‑ray; antibiotics may be required."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe respiratory symptoms need emergency care. Seek immediate medical attention."
+      }
+    },
+    "STI (Gonorrhea/Chlamydia)": {
+      "mild": {
+        "remedies": [
+          "Maintain rest and hydration for sti (gonorrhea/chlamydia).",
+          "Avoid strenuous activity and follow basic self-care measures.",
+          "Follow a light, balanced diet."
+        ],
+        "suggestion": "This appears to be a mild case of STI (Gonorrhea/Chlamydia). Monitor symptoms and consult a doctor if they persist."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow medical advice for sti (gonorrhea/chlamydia) and maintain supportive care.",
+          "Avoid triggers and keep good nutrition."
+        ],
+        "suggestion": "This appears to be a moderate case of STI (Gonorrhea/Chlamydia). Please consult a clinician for further evaluation."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "This appears to be severe. Home remedies are not recommended. Seek immediate medical attention."
+      }
+    },
+    "Skin Infection (Cellulitis)": {
+      "mild": {
+        "remedies": [
+          "Keep the area clean and elevated if possible.",
+          "Apply clean dressings and avoid squeezing the area."
+        ],
+        "suggestion": "If the area becomes more red, warm, or tender, see a doctor for possible antibiotics."
+      },
+      "moderate": {
+        "remedies": [
+          "Continue wound care and keep area covered.",
+          "Avoid self-treatment with ointments unless advised."
+        ],
+        "suggestion": "Medical review for oral antibiotics and wound assessment is recommended."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Rapidly spreading infection or systemic signs require emergency care."
+      }
+    },
+    "Tuberculosis (adult)": {
+      "mild": {
+        "remedies": [
+          "Cover coughs and avoid close contact, rest and good nutrition.",
+          "Do not self-medicate; follow clinic advice."
+        ],
+        "suggestion": "Persistent cough (>2 weeks) requires TB testing at a clinic (sputum/GeneXpert)."
+      },
+      "moderate": {
+        "remedies": [
+          "Maintain nutrition and follow any prescribed medicines.",
+          "Avoid smoking and crowded places."
+        ],
+        "suggestion": "See a doctor for formal testing and start treatment if positive."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "If breathing is very difficult or high fevers persist, seek urgent medical care."
+      }
+    },
+    "Typhoid": {
+      "mild": {
+        "remedies": [
+          "Ensure hydration and rest.",
+          "Avoid street food and unclean water."
+        ],
+        "suggestion": "If fever persists beyond 48–72 hours, see a physician for testing (blood culture) and antibiotics."
+      },
+      "moderate": {
+        "remedies": [
+          "Continue fluids and follow doctor’s antibiotics if prescribed.",
+          "Maintain good nutrition."
+        ],
+        "suggestion": "Get medical tests and start antibiotics under medical supervision."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "High persistent fever or complications require urgent hospital evaluation."
+      }
+    },
+    "UTI": {
+      "mild": {
+        "remedies": [
+          "Increase fluid intake and avoid irritant drinks (coffee, alcohol).",
+          "Maintain good personal hygiene."
+        ],
+        "suggestion": "If burning on urination persists or you have fever, see a doctor for urine testing."
+      },
+      "moderate": {
+        "remedies": [
+          "Continue fluids and follow any prescribed antibiotics.",
+          "Avoid holding urine for long periods."
+        ],
+        "suggestion": "Medical evaluation and urine culture may be needed to guide treatment."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "High fever with flank pain needs urgent medical attention."
+      }
+    }
+  },
+  "Elder": {
+    "Alzheimer's Disease": {
+      "mild": {
+        "remedies": [
+          "Keep routines consistent and provide memory aids.",
+          "Ensure a safe environment and supervision as needed."
+        ],
+        "suggestion": "Discuss concerns with a neurologist and consider cognitive assessment."
+      },
+      "moderate": {
+        "remedies": [
+          "Provide structured daily support and simplify tasks.",
+          "Consider memory-enhancing strategies and caregiver support."
+        ],
+        "suggestion": "See a specialist for diagnosis confirmation and management planning."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe cognitive decline requires immediate specialist and social support planning."
+      }
+    },
+    "COPD": {
+      "mild": {
+        "remedies": [
+          "Avoid smoke and air pollutants.",
+          "Do gentle walking and breathing exercises.",
+          "Keep inhalers and rescue medication available if prescribed."
+        ],
+        "suggestion": "If cough or breathlessness increases, consult a respiratory specialist."
+      },
+      "moderate": {
+        "remedies": [
+          "Use inhalers and follow breathing techniques.",
+          "Avoid exertion and maintain good nutrition."
+        ],
+        "suggestion": "Arrange a medical review and spirometry testing as advised."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe COPD exacerbation needs urgent hospital care. Seek emergency services."
+      }
+    },
+    "Cancer (various)": {
+      "mild": {
+        "remedies": [
+          "Maintain rest and hydration for cancer (various).",
+          "Avoid strenuous activity and follow basic self-care measures.",
+          "Follow a light, balanced diet."
+        ],
+        "suggestion": "This appears to be a mild case of Cancer (various). Monitor symptoms and consult a doctor if they persist."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow medical advice for cancer (various) and maintain supportive care.",
+          "Avoid triggers and keep good nutrition."
+        ],
+        "suggestion": "This appears to be a moderate case of Cancer (various). Please consult a clinician for further evaluation."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "This appears to be severe. Home remedies are not recommended. Seek immediate medical attention."
+      }
+    },
+    "Cataract/Macular Degeneration": {
+      "mild": {
+        "remedies": [
+          "Use good lighting for reading and update glasses as needed.",
+          "Protect eyes from bright sunlight with sunglasses."
+        ],
+        "suggestion": "See an eye specialist for assessment and monitoring."
+      },
+      "moderate": {
+        "remedies": [
+          "Consider visual aids and regular eye checks.",
+          "Avoid activities that strain vision excessively."
+        ],
+        "suggestion": "Ophthalmology referral for possible surgery or treatment is recommended."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe vision loss requires urgent ophthalmic care."
+      }
+    },
+    "Chronic Kidney Disease (elder)": {
+      "mild": {
+        "remedies": [
+          "Limit salt and high-protein supplements; stay hydrated with guidance.",
+          "Avoid NSAIDs unless prescribed."
+        ],
+        "suggestion": "Check basic kidney blood tests and urine tests as recommended."
+      },
+      "moderate": {
+        "remedies": [
+          "Adopt kidney-friendly diet and follow medical advice closely.",
+          "Monitor fluid intake as advised by clinician."
+        ],
+        "suggestion": "See a nephrologist for further evaluation and management."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe kidney issues require urgent specialist and hospital care."
+      }
+    },
+    "Coronary Artery Disease": {
+      "mild": {
+        "remedies": [
+          "Avoid heavy exertion and reduce stress.",
+          "Follow a heart-healthy diet low in saturated fats."
+        ],
+        "suggestion": "If chest discomfort recurs, get cardiac evaluation including ECG and risk factor review."
+      },
+      "moderate": {
+        "remedies": [
+          "Rest and avoid exertion; follow cardiology advice if on medications.",
+          "Control salt and fluid intake per doctor recommendations."
+        ],
+        "suggestion": "Arrange cardiology review and necessary tests (ECG, troponin, stress test) as advised."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe chest pain or suspected heart attack is an emergency. Call emergency services immediately."
+      }
+    },
+    "Depression (elderly)": {
+      "mild": {
+        "remedies": [
+          "Maintain social contact, regular sleep, and light exercise.",
+          "Practice basic breathing or relaxation techniques."
+        ],
+        "suggestion": "If low mood persists more than two weeks, speak to a mental health professional."
+      },
+      "moderate": {
+        "remedies": [
+          "Establish daily routines and consider counseling.",
+          "Avoid alcohol and substances that worsen mood."
+        ],
+        "suggestion": "Seek a formal assessment from a counselor or psychiatrist for therapy/medication options."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "If there is risk to life or severe symptoms, seek urgent mental health care or emergency services."
+      }
+    },
+    "Fracture (hip/vertebrae)": {
+      "mild": {
+        "remedies": [
+          "Immobilize the injured area and apply cold to reduce swelling.",
+          "Keep the limb elevated if possible."
+        ],
+        "suggestion": "Seek an X-ray and fracture clinic assessment to confirm and manage."
+      },
+      "moderate": {
+        "remedies": [
+          "Do not attempt heavy movement; follow splinting/immobilization advice.",
+          "Manage pain with appropriate analgesia as advised."
+        ],
+        "suggestion": "Orthopedic evaluation is necessary for proper treatment."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Open or severely displaced fractures require emergency orthopedic care."
+      }
+    },
+    "Gastroenteritis (elder)": {
+      "mild": {
+        "remedies": [
+          "Maintain oral rehydration (ORS) and small frequent sips.",
+          "Rest and avoid heavy meals for a short period.",
+          "Use bland diet (rice, bananas) until better."
+        ],
+        "suggestion": "If dehydration signs occur or symptoms last >48 hours, see a doctor."
+      },
+      "moderate": {
+        "remedies": [
+          "Continue ORS and consider medical antiemetics as advised.",
+          "Avoid dairy and spicy foods temporarily."
+        ],
+        "suggestion": "Arrange medical evaluation and stool testing if symptoms persist."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe dehydration or bloody stools need immediate hospital care."
+      }
+    },
+    "Hearing Impairment (age-related)": {
+      "mild": {
+        "remedies": [
+          "Check for earwax and avoid very loud environments.",
+          "Use simple communication strategies (face the speaker)."
+        ],
+        "suggestion": "If hearing remains impaired, see an ENT for formal audiometry."
+      },
+      "moderate": {
+        "remedies": [
+          "Avoid noisy places and consider hearing aids if advised.",
+          "Follow ENT guidance on management."
+        ],
+        "suggestion": "ENT evaluation and hearing tests are recommended."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Sudden significant hearing loss requires urgent ENT assessment."
+      }
+    },
+    "Heart_Failure": {
+      "mild": {
+        "remedies": [
+          "Maintain rest and hydration for heart_failure.",
+          "Avoid strenuous activity and follow basic self-care measures.",
+          "Follow a light, balanced diet."
+        ],
+        "suggestion": "This appears to be a mild case of Heart_Failure. Monitor symptoms and consult a doctor if they persist."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow medical advice for heart_failure and maintain supportive care.",
+          "Avoid triggers and keep good nutrition."
+        ],
+        "suggestion": "This appears to be a moderate case of Heart_Failure. Please consult a clinician for further evaluation."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "This appears to be severe. Home remedies are not recommended. Seek immediate medical attention."
+      }
+    },
+    "Hypertension": {
+      "mild": {
+        "remedies": [
+          "Maintain rest and hydration for hypertension.",
+          "Avoid strenuous activity and follow basic self-care measures.",
+          "Follow a light, balanced diet."
+        ],
+        "suggestion": "This appears to be a mild case of Hypertension. Monitor symptoms and consult a doctor if they persist."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow medical advice for hypertension and maintain supportive care.",
+          "Avoid triggers and keep good nutrition."
+        ],
+        "suggestion": "This appears to be a moderate case of Hypertension. Please consult a clinician for further evaluation."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "This appears to be severe. Home remedies are not recommended. Seek immediate medical attention."
+      }
+    },
+    "Osteoarthritis": {
+      "mild": {
+        "remedies": [
+          "Gentle range-of-motion exercises and warm compresses.",
+          "Maintain healthy weight to reduce joint stress."
+        ],
+        "suggestion": "If pain limits activity, see a doctor for diagnosis and pain management advice."
+      },
+      "moderate": {
+        "remedies": [
+          "Use prescribed pain-relief measures and structured physiotherapy.",
+          "Avoid high-impact activities."
+        ],
+        "suggestion": "Consider orthopedic or rheumatology review for longer-term management."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe joint damage or inability to move requires specialist attention."
+      }
+    },
+    "Osteoporosis": {
+      "mild": {
+        "remedies": [
+          "Increase calcium and vitamin D intake and do weight-bearing exercises.",
+          "Ensure fall-proof home environment."
+        ],
+        "suggestion": "Get a bone density test if risk factors are present and consult a doctor."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow supplementation and physiotherapy as advised.",
+          "Avoid situations with high fall risk."
+        ],
+        "suggestion": "See a specialist for fracture risk assessment and treatment options."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Fractures or severe bone loss need urgent orthopedic care."
+      }
+    },
+    "Palliative/Multi-morbidity": {
+      "mild": {
+        "remedies": [
+          "Maintain rest and hydration for palliative/multi-morbidity.",
+          "Avoid strenuous activity and follow basic self-care measures.",
+          "Follow a light, balanced diet."
+        ],
+        "suggestion": "This appears to be a mild case of Palliative/Multi-morbidity. Monitor symptoms and consult a doctor if they persist."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow medical advice for palliative/multi-morbidity and maintain supportive care.",
+          "Avoid triggers and keep good nutrition."
+        ],
+        "suggestion": "This appears to be a moderate case of Palliative/Multi-morbidity. Please consult a clinician for further evaluation."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "This appears to be severe. Home remedies are not recommended. Seek immediate medical attention."
+      }
+    },
+    "Parkinson's Disease": {
+      "mild": {
+        "remedies": [
+          "Encourage gentle daily exercise and balance training.",
+          "Ensure home safety to prevent falls."
+        ],
+        "suggestion": "See a neurologist to discuss symptom management and medications."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow physiotherapy and medication schedules.",
+          "Use assistive devices for mobility as needed."
+        ],
+        "suggestion": "Arrange neurology follow-up for therapy adjustments."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe movement impairment or complications require specialist care."
+      }
+    },
+    "Pneumonia (elder)": {
+      "mild": {
+        "remedies": [
+          "Rest at home and keep hydrated.",
+          "Use warm fluids and steam inhalation for comfort.",
+          "Monitor breathing rate and fever regularly."
+        ],
+        "suggestion": "If fever or cough persists beyond 48–72 hours, see a doctor for chest evaluation and possible antibiotics."
+      },
+      "moderate": {
+        "remedies": [
+          "Continue rest and hydration.",
+          "Use prescribed fever control and follow inhalation measures.",
+          "Avoid strenuous activity until better."
+        ],
+        "suggestion": "Arrange a medical review and chest X‑ray; antibiotics may be required."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe respiratory symptoms need emergency care. Seek immediate medical attention."
+      }
+    },
+    "Pressure_Ulcer/Decubitus": {
+      "mild": {
+        "remedies": [
+          "Relieve pressure frequently and keep skin clean and dry.",
+          "Use padding or cushions over pressure points."
+        ],
+        "suggestion": "If the sore does not improve, seek medical wound care advice."
+      },
+      "moderate": {
+        "remedies": [
+          "Follow wound care protocols and topical dressings as advised by a clinician.",
+          "Improve nutrition and reposition regularly."
+        ],
+        "suggestion": "Specialist wound care and possibly debridement may be needed."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Severe or infected pressure ulcers require urgent hospital wound care."
+      }
+    },
+    "Stroke (CVA)": {
+      "mild": {
+        "remedies": [
+          "Note the time of symptom onset and keep the patient safe and still.",
+          "Do not give food or drink if swallowing is impaired."
+        ],
+        "suggestion": "Any sudden weakness or speech difficulty needs immediate emergency assessment."
+      },
+      "moderate": {
+        "remedies": [
+          "Keep patient supported, monitor airway and breathing, and avoid unnecessary movement."
+        ],
+        "suggestion": "Urgent hospital assessment is required for stroke symptoms."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "Stroke is a medical emergency; seek immediate hospital care."
+      }
+    },
+    "UTI (elder)": {
+      "mild": {
+        "remedies": [
+          "Increase fluid intake and avoid irritant drinks (coffee, alcohol).",
+          "Maintain good personal hygiene."
+        ],
+        "suggestion": "If burning on urination persists or you have fever, see a doctor for urine testing."
+      },
+      "moderate": {
+        "remedies": [
+          "Continue fluids and follow prescribed antibiotics.",
+          "Avoid holding urine for long periods."
+        ],
+        "suggestion": "Medical evaluation and urine culture may be needed to guide treatment."
+      },
+      "severe": {
+        "remedies": [],
+        "suggestion": "High fever with flank pain needs urgent medical attention."
+      }
+    }
+  }
+}
