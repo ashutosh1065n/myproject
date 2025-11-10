@@ -1,1130 +1,284 @@
 {
-    "Adult": {
-        "Anemia (adult)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 30
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 30,
-                    "max_days": 90
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 90,
-                    "max_days": 180
-                }
-            }
-        },
-        "Appendicitis": {
-            "mild": {
-                "recovery": {
-                    "min_days": 10,
-                    "max_days": 14
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 21
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 21,
-                    "max_days": 28
-                }
-            }
-        },
-        "Asthma": {
-            "mild": {
-                "recovery": {
-                   "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                   "min_days": 365
-                }
-            }
-        },
-        "COPD/Chronic Bronchitis": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "COVID-19": {
-            "mild": {
-                "recovery": {
-                    "min_days": 5,
-                    "max_days": 14
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 28
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 21,
-                    "max_days": 42
-                }
-            }
-        },
-        "Chronic Kidney Disease": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Dengue": {
-            "mild": {
-                "recovery": {
-                    "min_days": 5,
-                    "max_days": 7
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 14
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 21
-                }
-            }
-        },
-        "Depression/Anxiety": {
-            "mild": {
-                "recovery": {
-                    "min_days": 30,
-                    "max_days": 180
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 180,
-                    "max_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Diabetes": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Gastritis/Peptic Ulcer": {
-            "mild": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 14
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 30
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 30,
-                    "max_days": 60
-                }
-            }
-        },
-        "Hepatitis (viral/chronic)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 90,
-                    "max_days": 180
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 180,
-                    "max_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Hypertension": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Ischemic Heart Disease": {
-            "mild": {
-                "recovery": {
-                    "min_days": 30,
-                    "max_days": 90
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 90,
-                    "max_days": 180
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 180,
-                    "max_days": 365
-                }
-            }
-        },
-        "Liver Disease (chronic/hepatic)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Pneumonia (adult)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 14
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 21
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 21,
-                    "max_days": 28
-                }
-            }
-        },
-        "STI (Gonorrhea/Chlamydia)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 14
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 21
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 21,
-                    "max_days": 30
-                }
-            }
-        },
-        "Skin Infection (Cellulitis)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 14
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 21
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 21,
-                    "max_days": 28
-                }
-            }
-        },
-        "Tuberculosis (adult)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 180,
-                    "max_days": 240
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 180,
-                    "max_days": 270
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 240,
-                    "max_days": 365
-                }
-            }
-        },
-        "Typhoid": {
-            "mild": {
-                "recovery": {
-                    "min_days": 10,
-                    "max_days": 14
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 21
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 21,
-                    "max_days": 28
-                }
-            }
-        },
-        "UTI": {
-            "mild": {
-                "recovery": {
-                    "min_days": 3,
-                    "max_days": 7
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 14
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 21
-                }
-            }
-        }
+  "Adult": {
+    "Anemia (adult)": {
+      "mild": { "recovery": { "min_days": 14, "max_days": 30 } },
+      "moderate": { "recovery": { "min_days": 30, "max_days": 90 } },
+      "severe": { "recovery": { "min_days": 90, "max_days": 180 } }
     },
-    "Child": {
-        "Acute Otitis Media": {
-            "mild": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 10
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 10,
-                    "max_days": 14
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 21
-                }
-            }
-        },
-        "Anemia (nutritional)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 30
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 30,
-                    "max_days": 90
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 90,
-                    "max_days": 180
-                }
-            }
-        },
-        "Bacterial Meningitis (pediatric)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 30
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 30,
-                    "max_days": 90
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 90,
-                    "max_days": 180
-                }
-            }
-        },
-        "Bronchiolitis (RSV)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 14
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 21
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 21,
-                    "max_days": 28
-                }
-            }
-        },
-        "Chickenpox": {
-            "mild": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 14
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 10,
-                    "max_days": 14
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 21
-                }
-            }
-        },
-        "Childhood Leukemia": {
-            "mild": {
-                "recovery": {
-                    "min_days": 180,
-                    "max_days": 1095
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365,
-                    "max_days": 1825
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 730,
-                    "max_days": 2555
-                }
-            }
-        },
-        "Common Cold": {
-            "mild": {
-                "recovery": {
-                    "min_days": 3,
-                    "max_days": 7
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 5,
-                    "max_days": 10
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 14
-                }
-            }
-        },
-        "Conjunctivitis": {
-            "mild": {
-                "recovery": {
-                    "min_days": 3,
-                    "max_days": 5
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 5,
-                    "max_days": 7
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 10
-                }
-            }
-        },
-        "Gastroenteritis": {
-            "mild": {
-                "recovery": {
-                    "min_days": 2,
-                    "max_days": 5
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 5,
-                    "max_days": 7
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 14
-                }
-            }
-        },
-        "Hand-Foot-and-Mouth Disease": {
-            "mild": {
-                "recovery": {
-                    "min_days": 5,
-                    "max_days": 7
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 10
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 10,
-                    "max_days": 14
-                }
-            }
-        },
-        "Impetigo/Cellulitis (skin)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 14
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 21
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 21,
-                    "max_days": 28
-                }
-            }
-        },
-        "Malaria (pediatric)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 14
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 10,
-                    "max_days": 21
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 30
-                }
-            }
-        },
-        "Measles": {
-            "mild": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 14
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 10,
-                    "max_days": 21
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 28
-                }
-            }
-        },
-        "Neonatal Sepsis": {
-            "mild": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 30
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 30,
-                    "max_days": 90
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 90,
-                    "max_days": 180
-                }
-            }
-        },
-        "Pediatric Tuberculosis": {
-            "mild": {
-                "recovery": {
-                    "min_days": 180,
-                    "max_days": 240
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 180,
-                    "max_days": 270
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 240,
-                    "max_days": 365
-                }
-            }
-        },
-        "Pertussis": {
-            "mild": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 30
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 30,
-                    "max_days": 60
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 60,
-                    "max_days": 90
-                }
-            }
-        },
-        "Pneumonia": {
-            "mild": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 14
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 21
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 21,
-                    "max_days": 28
-                }
-            }
-        },
-        "Rotavirus Infection": {
-            "mild": {
-                "recovery": {
-                    "min_days": 3,
-                    "max_days": 7
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 10
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 10,
-                    "max_days": 14
-                }
-            }
-        },
-        "UTI (pediatric)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 3,
-                    "max_days": 7
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 10
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 10,
-                    "max_days": 14
-                }
-            }
-        }
+    "Appendicitis": {
+      "mild": { "recovery": { "min_days": 7, "max_days": 14 }, "note": "laparoscopic recovery typically faster than open" },
+      "moderate": { "recovery": { "min_days": 14, "max_days": 21 } },
+      "severe": { "recovery": { "min_days": 21, "max_days": 28 }, "note": "perforation/complications may extend recovery" }
     },
-    "Elder": {
-        "Alzheimer's Disease": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "COPD": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Cancer (various)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Cataract/Macular Degeneration": {
-            "mild": {
-                "recovery": {
-                    "min_days": 30,
-                    "max_days": 180
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 180,
-                    "max_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Chronic Kidney Disease (elder)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Coronary Artery Disease": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Depression (elderly)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 30
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 180
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Fracture (hip/vertebrae)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 42,
-                    "max_days": 90
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 90,
-                    "max_days": 180
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 180,
-                    "max_days": 365
-                }
-            }
-        },
-        "Gastroenteritis (elder)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 3,
-                    "max_days": 7
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 7,
-                    "max_days": 10
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 10,
-                    "max_days": 14
-                }
-            }
-        },
-        "Hearing Impairment (age-related)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Heart_Failure": {
-            "mild": {
-                "recovery": {
-                    "min_days": 30,
-                    "max_days": 180
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 180,
-                    "max_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Hypertension": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Osteoarthritis": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Osteoporosis": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Palliative/Multi-morbidity": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Parkinson's Disease": {
-            "mild": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 365
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 365
-                }
-            }
-        },
-        "Pneumonia (elder)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 10,
-                    "max_days": 14
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 21
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 21,
-                    "max_days": 28
-                }
-            }
-        },
-        "Pressure_Ulcer/Decubitus": {
-            "mild": {
-                "recovery": {
-                    "min_days": 30,
-                    "max_days": 90
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 90,
-                    "max_days": 180
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 180,
-                    "max_days": 365
-                }
-            }
-        },
-        "Stroke (CVA)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 30,
-                    "max_days": 90
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 90,
-                    "max_days": 180
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 180,
-                    "max_days": 365
-                }
-            }
-        },
-        "UTI (elder)": {
-            "mild": {
-                "recovery": {
-                    "min_days": 5,
-                    "max_days": 10
-                }
-            },
-            "moderate": {
-                "recovery": {
-                    "min_days": 10,
-                    "max_days": 14
-                }
-            },
-            "severe": {
-                "recovery": {
-                    "min_days": 14,
-                    "max_days": 21
-                }
-            }
-        }
+    "Asthma": {
+      "chronic": true,
+      "management_note": "Long-term condition requiring ongoing management. Time-to-symptom-stabilization after an exacerbation varies (days–weeks). No fixed 'recovery' days."
+    },
+    "COPD/Chronic Bronchitis": {
+      "chronic": true,
+      "management_note": "Chronic disease; managed long-term. Acute exacerbations may recover over weeks; baseline disease does not have a fixed recovery day count."
+    },
+    "COVID-19": {
+      "mild": { "recovery": { "min_days": 5, "max_days": 14 } },
+      "moderate": { "recovery": { "min_days": 14, "max_days": 28 } },
+      "severe": { "recovery": { "min_days": 21, "max_days": 42 }, "note": "some patients experience prolonged symptoms (long COVID) beyond these ranges" }
+    },
+    "Chronic Kidney Disease": {
+      "chronic": true,
+      "management_note": "Chronic condition; progression and stabilization timelines vary widely. No fixed recovery days."
+    },
+    "Dengue": {
+      "mild": { "recovery": { "min_days": 5, "max_days": 7 } },
+      "moderate": { "recovery": { "min_days": 7, "max_days": 14 } },
+      "severe": { "recovery": { "min_days": 14, "max_days": 21 } }
+    },
+    "Depression/Anxiety": {
+      "mild": { "recovery": { "min_days": 30, "max_days": 180 }, "note": "highly individual; symptom improvement often occurs over weeks–months with therapy/medication" },
+      "moderate": { "recovery": { "min_days": 180, "max_days": 365 } },
+      "severe": { "recovery": { "min_days": 365 }, "note": "may require long-term treatment and follow-up" }
+    },
+    "Diabetes": {
+      "chronic": true,
+      "management_note": "Chronic metabolic condition requiring ongoing care. Acute glycemic events may stabilize in days–weeks; the underlying disease is managed rather than 'recovered'."
+    },
+    "Gastritis/Peptic Ulcer": {
+      "mild": { "recovery": { "min_days": 7, "max_days": 14 } },
+      "moderate": { "recovery": { "min_days": 14, "max_days": 30 } },
+      "severe": { "recovery": { "min_days": 30, "max_days": 60 } }
+    },
+    "Hepatitis (viral/chronic)": {
+      "mild": { "recovery": { "min_days": 90, "max_days": 180 } },
+      "moderate": { "recovery": { "min_days": 180, "max_days": 365 } },
+      "severe": { "chronic": true, "management_note": "Some viral hepatitis can be chronic; treatment duration and outcomes vary by type (A/B/C) and individual response." }
+    },
+    "Hypertension": {
+      "chronic": true,
+      "management_note": "Chronic condition; controlled with lifestyle and medications. No fixed recovery days."
+    },
+    "Ischemic Heart Disease": {
+      "mild": { "recovery": { "min_days": 30, "max_days": 90 }, "note": "depends on interventions (medical vs revascularisation)" },
+      "moderate": { "recovery": { "min_days": 90, "max_days": 180 } },
+      "severe": { "recovery": { "min_days": 180, "max_days": 365 } }
+    },
+    "Liver Disease (chronic/hepatic)": {
+      "chronic": true,
+      "management_note": "Chronic liver disease has variable trajectory; no fixed recovery days. Acute flares and post-procedure recoveries vary."
+    },
+    "Pneumonia (adult)": {
+      "mild": { "recovery": { "min_days": 7, "max_days": 14 } },
+      "moderate": { "recovery": { "min_days": 14, "max_days": 21 } },
+      "severe": { "recovery": { "min_days": 21, "max_days": 90 }, "note": "some elderly/complicated cases may take up to 90 days for full recovery" }
+    },
+    "STI (Gonorrhea/Chlamydia)": {
+      "mild": { "recovery": { "min_days": 7, "max_days": 14 } },
+      "moderate": { "recovery": { "min_days": 14, "max_days": 21 } },
+      "severe": { "recovery": { "min_days": 21, "max_days": 30 } }
+    },
+    "Skin Infection (Cellulitis)": {
+      "mild": { "recovery": { "min_days": 7, "max_days": 14 } },
+      "moderate": { "recovery": { "min_days": 14, "max_days": 21 } },
+      "severe": { "recovery": { "min_days": 21, "max_days": 28 } }
+    },
+    "Tuberculosis (adult)": {
+      "treatment_days": { "standard_drug_sensitive": 180, "notes": "Standard 6-month regimen for drug-sensitive TB. Drug-resistant TB requires longer regimens (often 9–18 months or more depending on regimen)." },
+      "symptom_improvement_days": { "min_days": 30, "max_days": 90 }
+    },
+    "Typhoid": {
+      "mild": { "recovery": { "min_days": 10, "max_days": 14 } },
+      "moderate": { "recovery": { "min_days": 14, "max_days": 21 } },
+      "severe": { "recovery": { "min_days": 21, "max_days": 28 } }
+    },
+    "UTI": {
+      "mild": { "recovery": { "min_days": 1, "max_days": 7 }, "note": "Uncomplicated lower UTI often improves within 24–48h of appropriate antibiotics; retained upper limit to cover varied practice" },
+      "moderate": { "recovery": { "min_days": 7, "max_days": 14 } },
+      "severe": { "recovery": { "min_days": 14, "max_days": 21 } }
     }
+  },
+  "Child": {
+    "Acute Otitis Media": {
+      "mild": { "recovery": { "min_days": 7, "max_days": 10 } },
+      "moderate": { "recovery": { "min_days": 10, "max_days": 14 } },
+      "severe": { "recovery": { "min_days": 14, "max_days": 21 } }
+    },
+    "Anemia (nutritional)": {
+      "mild": { "recovery": { "min_days": 14, "max_days": 30 } },
+      "moderate": { "recovery": { "min_days": 30, "max_days": 90 } },
+      "severe": { "recovery": { "min_days": 90, "max_days": 180 } }
+    },
+    "Bacterial Meningitis (pediatric)": {
+      "mild": { "recovery": { "min_days": 14, "max_days": 30 } },
+      "moderate": { "recovery": { "min_days": 30, "max_days": 90 } },
+      "severe": { "recovery": { "min_days": 90, "max_days": 180 }, "note": "neurological sequelae possible; recovery highly variable" }
+    },
+    "Bronchiolitis (RSV)": {
+      "mild": { "recovery": { "min_days": 7, "max_days": 14 } },
+      "moderate": { "recovery": { "min_days": 14, "max_days": 21 } },
+      "severe": { "recovery": { "min_days": 21, "max_days": 28 } }
+    },
+    "Chickenpox": {
+      "mild": { "recovery": { "min_days": 7, "max_days": 14 } },
+      "moderate": { "recovery": { "min_days": 10, "max_days": 14 } },
+      "severe": { "recovery": { "min_days": 14, "max_days": 21 } }
+    },
+    "Childhood Leukemia": {
+      "mild": { "recovery": { "min_days": 180, "max_days": 1095 }, "note": "treatment and remission timelines vary widely; this reflects range to remission rather than cure" },
+      "moderate": { "recovery": { "min_days": 365, "max_days": 1825 } },
+      "severe": { "recovery": { "min_days": 730, "max_days": 2555 } }
+    },
+    "Common Cold": {
+      "mild": { "recovery": { "min_days": 3, "max_days": 7 } },
+      "moderate": { "recovery": { "min_days": 5, "max_days": 10 } },
+      "severe": { "recovery": { "min_days": 7, "max_days": 14 } }
+    },
+    "Conjunctivitis": {
+      "mild": { "recovery": { "min_days": 3, "max_days": 5 } },
+      "moderate": { "recovery": { "min_days": 5, "max_days": 7 } },
+      "severe": { "recovery": { "min_days": 7, "max_days": 10 } }
+    },
+    "Gastroenteritis": {
+      "mild": { "recovery": { "min_days": 2, "max_days": 5 } },
+      "moderate": { "recovery": { "min_days": 5, "max_days": 7 } },
+      "severe": { "recovery": { "min_days": 7, "max_days": 14 } }
+    },
+    "Hand-Foot-and-Mouth Disease": {
+      "mild": { "recovery": { "min_days": 5, "max_days": 7 } },
+      "moderate": { "recovery": { "min_days": 7, "max_days": 10 } },
+      "severe": { "recovery": { "min_days": 10, "max_days": 14 } }
+    },
+    "Impetigo/Cellulitis (skin)": {
+      "mild": { "recovery": { "min_days": 7, "max_days": 14 } },
+      "moderate": { "recovery": { "min_days": 14, "max_days": 21 } },
+      "severe": { "recovery": { "min_days": 21, "max_days": 28 } }
+    },
+    "Malaria (pediatric)": {
+      "mild": { "recovery": { "min_days": 7, "max_days": 14 } },
+      "moderate": { "recovery": { "min_days": 10, "max_days": 21 } },
+      "severe": { "recovery": { "min_days": 14, "max_days": 30 } }
+    },
+    "Measles": {
+      "mild": { "recovery": { "min_days": 7, "max_days": 14 } },
+      "moderate": { "recovery": { "min_days": 10, "max_days": 21 } },
+      "severe": { "recovery": { "min_days": 14, "max_days": 28 } }
+    },
+    "Neonatal Sepsis": {
+      "mild": { "recovery": { "min_days": 14, "max_days": 30 } },
+      "moderate": { "recovery": { "min_days": 30, "max_days": 90 } },
+      "severe": { "recovery": { "min_days": 90, "max_days": 180 } }
+    },
+    "Pediatric Tuberculosis": {
+      "treatment_days": { "standard_drug_sensitive": 180, "notes": "Treatment duration standard 6 months; drug-resistant cases require longer" },
+      "symptom_improvement_days": { "min_days": 30, "max_days": 90 }
+    },
+    "Pertussis": {
+      "mild": { "recovery": { "min_days": 14, "max_days": 30 } },
+      "moderate": { "recovery": { "min_days": 30, "max_days": 60 } },
+      "severe": { "recovery": { "min_days": 60, "max_days": 90 } }
+    },
+    "Pneumonia": {
+      "mild": { "recovery": { "min_days": 7, "max_days": 14 } },
+      "moderate": { "recovery": { "min_days": 14, "max_days": 21 } },
+      "severe": { "recovery": { "min_days": 21, "max_days": 28 } }
+    },
+    "Rotavirus Infection": {
+      "mild": { "recovery": { "min_days": 3, "max_days": 7 } },
+      "moderate": { "recovery": { "min_days": 7, "max_days": 10 } },
+      "severe": { "recovery": { "min_days": 10, "max_days": 14 } }
+    },
+    "UTI (pediatric)": {
+      "mild": { "recovery": { "min_days": 3, "max_days": 7 } },
+      "moderate": { "recovery": { "min_days": 7, "max_days": 10 } },
+      "severe": { "recovery": { "min_days": 10, "max_days": 14 } }
+    }
+  },
+  "Elder": {
+    "Alzheimer's Disease": {
+      "chronic": true,
+      "management_note": "Progressive neurodegenerative disease; managed long-term. No fixed recovery days."
+    },
+    "COPD": {
+      "chronic": true,
+      "management_note": "Chronic disease; exacerbations recover over variable time; baseline disease persists."
+    },
+    "Cancer (various)": {
+      "chronic": true,
+      "management_note": "Cancer treatment and timelines vary widely by type and stage; not a fixed recovery-day condition."
+    },
+    "Cataract/Macular Degeneration": {
+      "mild": { "recovery": { "min_days": 30, "max_days": 180 } },
+      "moderate": { "recovery": { "min_days": 180, "max_days": 365 } },
+      "severe": { "chronic": true, "management_note": "Severe visual impairment may require ongoing care" }
+    },
+    "Chronic Kidney Disease (elder)": {
+      "chronic": true,
+      "management_note": "Chronic condition; progression varies."
+    },
+    "Coronary Artery Disease": {
+      "chronic": true,
+      "management_note": "Chronic ischemic disease; post-intervention recovery times vary (weeks–months)."
+    },
+    "Depression (elderly)": {
+      "mild": { "recovery": { "min_days": 30 } },
+      "moderate": { "recovery": { "min_days": 180 } },
+      "severe": { "recovery": { "min_days": 365 }, "note": "often requires long-term management" }
+    },
+    "Fracture (hip/vertebrae)": {
+      "mild": { "recovery": { "min_days": 42, "max_days": 90 } },
+      "moderate": { "recovery": { "min_days": 90, "max_days": 180 } },
+      "severe": { "recovery": { "min_days": 180, "max_days": 365 } }
+    },
+    "Gastroenteritis (elder)": {
+      "mild": { "recovery": { "min_days": 3, "max_days": 7 } },
+      "moderate": { "recovery": { "min_days": 7, "max_days": 10 } },
+      "severe": { "recovery": { "min_days": 10, "max_days": 14 } }
+    },
+    "Hearing Impairment (age-related)": {
+      "chronic": true,
+      "management_note": "Age-related hearing loss is chronic; interventions (hearing aids) improve function but do not 'cure' the condition." 
+    },
+    "Heart_Failure": {
+      "mild": { "recovery": { "min_days": 30, "max_days": 180 } },
+      "moderate": { "recovery": { "min_days": 180, "max_days": 365 } },
+      "severe": { "chronic": true, "management_note": "Chronic condition; may require ongoing treatment and long-term management." }
+    },
+    "Hypertension": {
+      "chronic": true,
+      "management_note": "Chronic condition; control rather than recovery."
+    },
+    "Osteoarthritis": {
+      "chronic": true,
+      "management_note": "Chronic degenerative joint disease; symptom control and functional improvement timelines vary." 
+    },
+    "Osteoporosis": {
+      "chronic": true,
+      "management_note": "Chronic metabolic bone disease; fracture prevention and treatment timelines vary."
+    },
+    "Palliative/Multi-morbidity": {
+      "chronic": true,
+      "management_note": "Complex chronic care; not a fixed recovery-time condition." 
+    },
+    "Parkinson's Disease": {
+      "chronic": true,
+      "management_note": "Progressive neurodegenerative disorder; managed long-term." 
+    },
+    "Pneumonia (elder)": {
+      "mild": { "recovery": { "min_days": 10, "max_days": 14 } },
+      "moderate": { "recovery": { "min_days": 14, "max_days": 21 } },
+      "severe": { "recovery": { "min_days": 21, "max_days": 90 }, "note": "elderly and complicated cases may take longer" }
+    },
+    "Pressure_Ulcer/Decubitus": {
+      "mild": { "recovery": { "min_days": 30, "max_days": 90 } },
+      "moderate": { "recovery": { "min_days": 90, "max_days": 180 } },
+      "severe": { "recovery": { "min_days": 180, "max_days": 365 } }
+    },
+    "Stroke (CVA)": {
+      "mild": { "recovery": { "min_days": 30, "max_days": 90 } },
+      "moderate": { "recovery": { "min_days": 90, "max_days": 180 } },
+      "severe": { "recovery": { "min_days": 180, "max_days": 365 } }
+    },
+    "UTI (elder)": {
+      "mild": { "recovery": { "min_days": 5, "max_days": 10 } },
+      "moderate": { "recovery": { "min_days": 10, "max_days": 14 } },
+      "severe": { "recovery": { "min_days": 14, "max_days": 21 } }
+    }
+  }
 }
