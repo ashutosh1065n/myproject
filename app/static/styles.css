@@ -1,0 +1,147 @@
+:root{
+  /* Youthful, clinical palette */
+  --bg: #f2f6fb;
+  --panel: #ffffff;
+  --ink: #0c2d3d;
+  --muted: #6e8596;
+  --pri: #0b73b5;         /* medical blue */
+  --pri-600:#095f95;
+  --cyan:#18a6c8;
+  --ok:#1e8d6d;
+  --warn:#d7891f;
+  --danger:#c53939;
+  --border:#e2edf6;
+  --chip:#eef6ff;
+  --chip-br:#d5e9ff;
+  --shadow: 0 10px 30px rgba(12,45,61,.08);
+  --radius: 16px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Inter","IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+}
+
+/* Top App Bar */
+.appbar{
+  position:sticky; top:0; z-index:50;
+  background:linear-gradient(90deg, var(--pri), var(--cyan));
+  color:#fff; padding:14px 22px;
+  box-shadow:0 12px 28px rgba(9,95,149,.20);
+}
+.appbar .row{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap}
+.brand{display:flex; gap:10px; align-items:baseline}
+.brand h1{margin:0; font-size:1.4rem; letter-spacing:.2px; font-weight:800}
+.brand small{opacity:.95; font-weight:600}
+
+/* Shell layout */
+.shell{max-width:1420px; margin:0 auto; padding:22px}
+.grid{
+  display:grid; gap:22px;
+  grid-template-columns: 360px 1fr;
+  align-items:start;
+  min-height: calc(100vh - 110px);
+}
+@media (max-width: 1100px){ .grid{grid-template-columns: 1fr} }
+
+/* Cards */
+.card{
+  background:var(--panel); border:1px solid var(--border);
+  border-radius:var(--radius); box-shadow:var(--shadow);
+  padding:16px 16px 18px; animation:rise .25s ease;
+}
+.card h2{
+  margin:0 0 12px; font-size:1.05rem; color:#0b4c74;
+  border-bottom:2px solid #eef4fb; padding-bottom:8px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+
+/* Sidebar: Patient + Symptoms */
+.field{display:flex; flex-direction:column; gap:8px; margin-bottom:12px}
+.label{font-weight:700; font-size:.95rem}
+.input, .search{
+  border:1px solid var(--border); background:#fff; border-radius:12px;
+  padding:12px; outline:none; font-weight:600;
+  transition:border .15s ease, box-shadow .15s ease;
+}
+.input:focus, .search:focus{border-color:#bfe6ff; box-shadow:0 0 0 4px #e8f5ff}
+
+.filters{display:flex; flex-wrap:wrap; gap:8px; margin:4px 0 10px}
+.chip{
+  padding:8px 12px; border-radius:999px; cursor:pointer; font-weight:700; font-size:.9rem;
+  background:var(--chip); border:1px solid var(--chip-br); color:#0b3e5a;
+  transition:transform .08s ease, box-shadow .12s ease, background .12s ease;
+}
+.chip[aria-pressed="true"]{background:#dff0ff}
+.chip:hover{transform:translateY(-1px); box-shadow:0 8px 18px rgba(10,111,174,.12)}
+
+.sym-grid{
+  display:grid; gap:10px; grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  border:1px dashed var(--border); background:#fbfdff;
+  border-radius:14px; padding:10px; max-height:520px; overflow:auto;
+}
+.sym{
+  display:flex; align-items:center; gap:10px;
+  padding:10px 12px; border:1px solid var(--chip-br); background:var(--chip);
+  border-radius:12px; transition:transform .08s ease, box-shadow .12s ease;
+}
+.sym:hover{transform:translateY(-2px); box-shadow:0 10px 22px rgba(10,111,174,.10)}
+.sym input{width:18px; height:18px; cursor:pointer}
+
+.actions{display:flex; gap:10px; align-items:center; margin-top:12px}
+.btn{
+  background:var(--pri); color:#fff; border:none; border-radius:12px;
+  padding:11px 16px; font-weight:800; cursor:pointer;
+  transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+}
+.btn:hover{transform:translateY(-1px); background:var(--pri-600); box-shadow:0 10px 22px rgba(9,93,144,.18)}
+.btn.muted{background:#8a98a5}
+.btn.ghost{background:#f3f7fb; color:var(--ink); border:1px dashed var(--border)}
+.status{margin-left:auto; color:var(--muted); font-weight:700}
+
+/* Main two-up panels */
+.panes{display:grid; gap:22px; grid-template-columns: 1.15fr .85fr}
+@media (max-width:1250px){ .panes{grid-template-columns:1fr} }
+
+/* Summary row */
+.summary{
+  display:grid; gap:14px; grid-template-columns: repeat(3, 1fr);
+  margin-bottom:14px;
+}
+@media (max-width:900px){ .summary{grid-template-columns:1fr} }
+.metric{
+  background:linear-gradient(180deg,#f8fbff,#f3f8fe); border:1px solid var(--border);
+  border-radius:14px; padding:12px 14px;
+}
+.metric .k{font-size:1.6rem; font-weight:800}
+.metric .sub{font-size:.9rem; color: var(--muted); font-weight:700}
+
+/* Severity badge strip */
+.severity{
+  display:flex; gap:12px; align-items:center; padding:12px;
+  border-radius:12px; border:1px solid var(--border); background:#f6fbff;
+}
+.sev-badge{min-width:100px; text-align:center; font-weight:800; padding:8px 10px; border-radius:10px; color:#fff}
+.sev-mild{background:var(--ok)} .sev-moderate{background:var(--warn)} .sev-severe{background:var(--danger)}
+
+/* Table */
+table{width:100%; border-collapse:collapse; border:1px solid var(--border); border-radius:14px; overflow:hidden}
+th,td{padding:10px 12px; border-bottom:1px solid var(--border); font-size:.95rem}
+th{background:#eef6ff; text-align:left; color:#0b4c74}
+tr.highlight td{background:#ecf9f2}
+
+/* Chart wrapper for fixed height */
+.chart-wrap{height:380px}
+
+/* Print */
+@media print{
+  .btn,.search,.chip{display:none!important}
+  .grid{grid-template-columns:1fr}
+  .panes{grid-template-columns:1fr}
+  .card{box-shadow:none; border-color:#ddd}
+  body{background:#fff}
+}
+
+/* Animations */
+@keyframes rise{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:translateY(0)}}
