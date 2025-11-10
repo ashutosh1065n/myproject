@@ -5,157 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Professional fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Chart.js -->
+
+  <!-- External CSS (served by Flask static/) -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+  <!-- Chart.js (must load before your script.js) -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    :root{
-      /* Youthful, clinical palette */
-      --bg: #f2f6fb;
-      --panel: #ffffff;
-      --ink: #0c2d3d;
-      --muted: #6e8596;
-      --pri: #0b73b5;         /* medical blue */
-      --pri-600:#095f95;
-      --cyan:#18a6c8;
-      --ok:#1e8d6d;
-      --warn:#d7891f;
-      --danger:#c53939;
-      --border:#e2edf6;
-      --chip:#eef6ff;
-      --chip-br:#d5e9ff;
-      --shadow: 0 10px 30px rgba(12,45,61,.08);
-      --radius: 16px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; background:var(--bg); color:var(--ink);
-      font-family:"Inter","IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
-    }
-
-    /* Top App Bar */
-    .appbar{
-      position:sticky; top:0; z-index:50;
-      background:linear-gradient(90deg, var(--pri), var(--cyan));
-      color:#fff; padding:14px 22px;
-      box-shadow:0 12px 28px rgba(9,95,149,.20);
-    }
-    .appbar .row{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap}
-    .brand{display:flex; gap:10px; align-items:baseline}
-    .brand h1{margin:0; font-size:1.4rem; letter-spacing:.2px; font-weight:800}
-    .brand small{opacity:.95; font-weight:600}
-
-    /* Shell layout */
-    .shell{max-width:1420px; margin:0 auto; padding:22px}
-    .grid{
-      display:grid; gap:22px;
-      grid-template-columns: 360px 1fr;
-      align-items:start;
-      min-height: calc(100vh - 110px);
-    }
-    @media (max-width: 1100px){ .grid{grid-template-columns: 1fr} }
-
-    /* Cards */
-    .card{
-      background:var(--panel); border:1px solid var(--border);
-      border-radius:var(--radius); box-shadow:var(--shadow);
-      padding:16px 16px 18px; animation:rise .25s ease;
-    }
-    .card h2{
-      margin:0 0 12px; font-size:1.05rem; color:#0b4c74;
-      border-bottom:2px solid #eef4fb; padding-bottom:8px;
-      display:flex; align-items:center; justify-content:space-between;
-    }
-
-    /* Sidebar: Patient + Symptoms */
-    .field{display:flex; flex-direction:column; gap:8px; margin-bottom:12px}
-    .label{font-weight:700; font-size:.95rem}
-    .input, .search{
-      border:1px solid var(--border); background:#fff; border-radius:12px;
-      padding:12px; outline:none; font-weight:600;
-      transition:border .15s ease, box-shadow .15s ease;
-    }
-    .input:focus, .search:focus{border-color:#bfe6ff; box-shadow:0 0 0 4px #e8f5ff}
-
-    .filters{display:flex; flex-wrap:wrap; gap:8px; margin:4px 0 10px}
-    .chip{
-      padding:8px 12px; border-radius:999px; cursor:pointer; font-weight:700; font-size:.9rem;
-      background:var(--chip); border:1px solid var(--chip-br); color:#0b3e5a;
-      transition:transform .08s ease, box-shadow .12s ease, background .12s ease;
-    }
-    .chip[aria-pressed="true"]{background:#dff0ff}
-    .chip:hover{transform:translateY(-1px); box-shadow:0 8px 18px rgba(10,111,174,.12)}
-
-    .sym-grid{
-      display:grid; gap:10px; grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
-      border:1px dashed var(--border); background:#fbfdff;
-      border-radius:14px; padding:10px; max-height:520px; overflow:auto;
-    }
-    .sym{
-      display:flex; align-items:center; gap:10px;
-      padding:10px 12px; border:1px solid var(--chip-br); background:var(--chip);
-      border-radius:12px; transition:transform .08s ease, box-shadow .12s ease;
-    }
-    .sym:hover{transform:translateY(-2px); box-shadow:0 10px 22px rgba(10,111,174,.10)}
-    .sym input{width:18px; height:18px; cursor:pointer}
-
-    .actions{display:flex; gap:10px; align-items:center; margin-top:12px}
-    .btn{
-      background:var(--pri); color:#fff; border:none; border-radius:12px;
-      padding:11px 16px; font-weight:800; cursor:pointer;
-      transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
-    }
-    .btn:hover{transform:translateY(-1px); background:var(--pri-600); box-shadow:0 10px 22px rgba(9,93,144,.18)}
-    .btn.muted{background:#8a98a5}
-    .btn.ghost{background:#f3f7fb; color:var(--ink); border:1px dashed var(--border)}
-    .status{margin-left:auto; color:var(--muted); font-weight:700}
-
-    /* Main two-up panels */
-    .panes{display:grid; gap:22px; grid-template-columns: 1.15fr .85fr}
-    @media (max-width:1250px){ .panes{grid-template-columns:1fr} }
-
-    /* Summary row */
-    .summary{
-      display:grid; gap:14px; grid-template-columns: repeat(3, 1fr);
-      margin-bottom:14px;
-    }
-    @media (max-width:900px){ .summary{grid-template-columns:1fr} }
-    .metric{
-      background:linear-gradient(180deg,#f8fbff,#f3f8fe); border:1px solid var(--border);
-      border-radius:14px; padding:12px 14px;
-    }
-    .metric .k{font-size:1.6rem; font-weight:800}
-    .metric .sub{font-size:.9rem; color: var(--muted); font-weight:700}
-
-    /* Severity badge strip */
-    .severity{
-      display:flex; gap:12px; align-items:center; padding:12px;
-      border-radius:12px; border:1px solid var(--border); background:#f6fbff;
-    }
-    .sev-badge{min-width:100px; text-align:center; font-weight:800; padding:8px 10px; border-radius:10px; color:#fff}
-    .sev-mild{background:var(--ok)} .sev-moderate{background:var(--warn)} .sev-severe{background:var(--danger)}
-
-    /* Table */
-    table{width:100%; border-collapse:collapse; border:1px solid var(--border); border-radius:14px; overflow:hidden}
-    th,td{padding:10px 12px; border-bottom:1px solid var(--border); font-size:.95rem}
-    th{background:#eef6ff; text-align:left; color:#0b4c74}
-    tr.highlight td{background:#ecf9f2}
-
-    /* Chart wrapper for fixed height */
-    .chart-wrap{height:380px}
-
-    /* Print */
-    @media print{
-      .btn,.search,.chip{display:none!important}
-      .grid{grid-template-columns:1fr}
-      .panes{grid-template-columns:1fr}
-      .card{box-shadow:none; border-color:#ddd}
-      body{background:#fff}
-    }
-
-    /* Animations */
-    @keyframes rise{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:translateY(0)}}
-  </style>
 </head>
 <body>
   <!-- App Bar -->
@@ -166,11 +21,11 @@
         <small>Evidence-aware • Age-conditioned • Probability driven</small>
       </div>
       <div class="row">
-  <button class="btn ghost" id="pdfBtn" type="button" style="display:none;">Save as PDF</button>
-  <form action="{{ url_for('logout') }}" method="get" style="display:inline;">
-    <button type="submit" class="btn ghost" style="margin-left:8px;">Logout</button>
-  </form>
-</div>
+        <button class="btn ghost" id="pdfBtn" type="button" style="display:none;">Save as PDF</button>
+        <form action="{{ url_for('logout') }}" method="get" style="display:inline;">
+          <button type="submit" class="btn ghost" style="margin-left:8px;">Logout</button>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -180,13 +35,13 @@
       <!-- Left: Patient + Symptoms -->
       <aside class="card">
         <div class="welcome-message">
-  <h2 style="color: #dc2626; font-weight:800;">Welcome, {{ patient_name }} !</h2>
-</div>
+          <h2 style="color: #dc2626; font-weight:800;">Welcome, {{ patient_name }} !</h2>
+        </div>
         <h2>Patient Details</h2>
 
         <div class="field">
           <label class="label" for="age">Age</label>
-          <input id="age" type="number" min="0" max="100" class="input" placeholder="Enter age (e.g., 27)" />
+          <input id="age" name="age" type="number" min="0" max="100" class="input" placeholder="Enter age (e.g., 27)" />
         </div>
 
         <div class="field">
@@ -198,14 +53,14 @@
         <div class="field">
           <div class="label">Categories</div>
           <div class="filters" id="categories">
-            <button class="chip" data-cat="all" aria-pressed="true">All</button>
-            <button class="chip" data-cat="fever">Fever / Inflammation</button>
-            <button class="chip" data-cat="resp">Respiratory</button>
-            <button class="chip" data-cat="gi">Gastrointestinal</button>
-            <button class="chip" data-cat="neuro">Neurological</button>
-            <button class="chip" data-cat="pain">Pain / Fatigue</button>
-            <button class="chip" data-cat="skin">Dermatologic</button>
-            <button class="chip" data-cat="general">General</button>
+            <button class="chip" data-cat="all" aria-pressed="true" type="button">All</button>
+            <button class="chip" data-cat="fever" type="button">Fever / Inflammation</button>
+            <button class="chip" data-cat="resp" type="button">Respiratory</button>
+            <button class="chip" data-cat="gi" type="button">Gastrointestinal</button>
+            <button class="chip" data-cat="neuro" type="button">Neurological</button>
+            <button class="chip" data-cat="pain" type="button">Pain / Fatigue</button>
+            <button class="chip" data-cat="skin" type="button">Dermatologic</button>
+            <button class="chip" data-cat="general" type="button">General</button>
           </div>
         </div>
 
@@ -214,7 +69,7 @@
         </div>
 
         <div class="actions">
-          <button class="btn" id="predictBtn">Predict</button>
+          <button class="btn" id="predictBtn" type="button">Predict</button>
           <button class="btn muted" id="resetBtn" type="button">Reset</button>
           <div class="status" id="selCount">0 selected</div>
         </div>
@@ -255,10 +110,10 @@
             </div>
           </div>
 
-          <!-- NEW: Top disease description (added, style inherits your palette) -->
+          <!-- NEW: Top disease description -->
           <div id="diseaseDescription" style="margin-top:10px; color:var(--ink); font-weight:600;"></div>
 
-          <!-- Top 4 table (UI text unchanged) -->
+          <!-- Top 4 table -->
           <h2 style="margin-top:16px;">Other Possible Diagnoses</h2>
           <table id="resultTable" aria-label="Top 4 predicted diseases">
             <thead><tr><th>Disease</th><th>Probability</th></tr></thead>
@@ -273,397 +128,46 @@
             <canvas id="donutChart" height="320" aria-label="Probability doughnut chart"></canvas>
           </div>
         </div>
-       <!-- Care Guidance Section -->
-<div class="card" id="care-guidance" style="display:none; grid-column: 1 / -1; padding:10px 12px;">
-  <h2 style="font-size:1.05rem; text-align:center; margin:0 0 6px; color:#0b4c74;">
-    Care Guidance
-  </h2>
-  
-  <!-- Buttons row -->
-  <div style="display:flex; justify-content:center; gap:24px; margin:6px 0 6px;">
-    <button id="remedies-btn" class="btn" style="display:none; padding:6px 14px; font-size:.90rem;">Home Remedies</button>
-    <button id="suggestion-btn" class="btn muted" style="display:none; padding:6px 14px; font-size:.90rem;">Suggestions</button>
-  </div>
-  
-  <!-- Compact output box -->
-  <div id="care-output" 
-       style="display:none; padding:8px 10px 0px; background:#fafafa; border-radius:8px; border:1px solid var(--border);
-              font-size: 1.05rem; line-height:1.4; font-weight:500;">
-  </div>
-  </div>
-<div class="card" id="recovery-card" style="display:none; grid-column: 1 / -1; padding:10px 12px;">
-  <h2 style="font-size:1.05rem; text-align:center; margin:0 0 6px; color:#0b4c74;">
-    Recovery Timeline
-  </h2>
-  <div style="text-align:center; margin:6px 0;">
-    <button id="recoveryBtn" class="btn muted" style="padding:6px 14px; font-size:.90rem;">
-      Expected Recovery
-    </button>
-  </div>
-  <div id="recoveryOutput" 
-       style="display:none; margin-top:8px; padding:8px 10px; background:#fafafa; 
-              border-radius:8px; border:1px solid var(--border); 
-              font-size: 1rem; font-weight:600; text-align:center;">
-  </div>
-</div>
+
+        <!-- Care Guidance Section -->
+        <div class="card" id="care-guidance" style="display:none; grid-column: 1 / -1; padding:10px 12px;">
+          <h2 style="font-size:1.05rem; text-align:center; margin:0 0 6px; color:#0b4c74;">
+            Care Guidance
+          </h2>
+
+          <!-- Buttons row -->
+          <div style="display:flex; justify-content:center; gap:24px; margin:6px 0 6px;">
+            <button id="remedies-btn" class="btn" style="display:none; padding:6px 14px; font-size:.90rem;">Home Remedies</button>
+            <button id="suggestion-btn" class="btn muted" style="display:none; padding:6px 14px; font-size:.90rem;">Suggestions</button>
+          </div>
+
+          <!-- Compact output box -->
+          <div id="care-output"
+               style="display:none; padding:8px 10px 0px; background:#fafafa; border-radius:8px; border:1px solid var(--border);
+                      font-size: 1.05rem; line-height:1.4; font-weight:500;">
+          </div>
+        </div>
+
+        <div class="card" id="recovery-card" style="display:none; grid-column: 1 / -1; padding:10px 12px;">
+          <h2 style="font-size:1.05rem; text-align:center; margin:0 0 6px; color:#0b4c74;">
+            Recovery Timeline
+          </h2>
+          <div style="text-align:center; margin:6px 0;">
+            <button id="recoveryBtn" class="btn muted" style="padding:6px 14px; font-size:.90rem;">
+              Expected Recovery
+            </button>
+          </div>
+          <div id="recoveryOutput"
+               style="display:none; margin-top:8px; padding:8px 10px; background:#fafafa;
+                      border-radius:8px; border:1px solid var(--border);
+                      font-size: 1rem; font-weight:600; text-align:center;">
+          </div>
+        </div>
       </section>
     </div>
   </div>
 
-  <script>
-    /* ====== State ====== */
-    let allSymptoms = [];      // current age's full list
-    let filteredSymptoms = []; // after text + category filters
-    let selected = new Set();
-    let donut = null;
-
-    const palette = ['#0b73b5','#18a6c8','#1e8d6d','#d7891f','#c53939','#6e8596','#095f95','#4aa3a0','#5f79a0','#8a98a5'];
-
-    /* ====== Elements ====== */
-    const ageEl = document.getElementById('age');
-    const symBox = document.getElementById('symptomBox');
-    const symSearch = document.getElementById('symSearch');
-    const categories = document.getElementById('categories');
-    const predictBtn = document.getElementById('predictBtn');
-    const resetBtn = document.getElementById('resetBtn');
-    const pdfBtn = document.getElementById('pdfBtn');
-
-    const statusLine = document.getElementById('statusLine');
-    const selCount = document.getElementById('selCount');
-    const ageGroupK = document.getElementById('ageGroupK');
-    const symCountK = document.getElementById('symCountK');
-    const modelNameK = document.getElementById('modelNameK');
-
-    const severityCard = document.getElementById('severityCard');
-    const sevBadge = document.getElementById('sevBadge');
-    const sevTitle = document.getElementById('sevTitle');
-    const sevDetail = document.getElementById('sevDetail');
-    const tableBody = document.querySelector('#resultTable tbody');
-
-    document.getElementById("age").addEventListener("input", function () {
-  let value = parseInt(this.value, 10);
-  if (value < 1) this.value = 1;     
-  if (value > 100) this.value = 100; 
-});
-
-    /* ====== Helpers ====== */
-    function setStatus(text, level=''){
-      statusLine.textContent = text;
-      statusLine.style.color = level==='ok' ? '#1e8d6d' : level==='warn' ? '#d7891f' : level==='danger' ? '#c53939' : 'var(--muted)';
-    }
-    function debounce(fn, wait=350){ let t; return (...a)=>{ clearTimeout(t); t=setTimeout(()=>fn(...a), wait); }; }
-    function groupFromAge(a){ if (a<13) return 'child'; if (a<60) return 'adult'; return 'elder'; }
-    function updateCounters(){
-      selCount.textContent = `${selected.size} selected`;
-      symCountK.textContent = selected.size;
-      const g = Number(ageEl.value||0); const grp = groupFromAge(g);
-      ageGroupK.textContent = grp.charAt(0).toUpperCase()+grp.slice(1);
-      modelNameK.textContent = grp==='child'?'Pediatrics':(grp==='adult'?'General Medicine':'Geriatrics');
-    }
-
-    // Client-side category tagging (UX only)
-    function tagCat(sym){
-      const s = sym.toLowerCase();
-      if (/(fever|pyrex|inflammation|chills)/.test(s)) return 'fever';
-      if (/(cough|breath|wheeze|sputum|throat|nose|cold|congestion)/.test(s)) return 'resp';
-      if (/(nausea|vomit|diarrhea|abdomen|stomach|constipation|gastric|appetite)/.test(s)) return 'gi';
-      if (/(headache|dizziness|seizure|confusion|syncope|tingling|numb)/.test(s)) return 'neuro';
-      if (/(pain|ache|fatigue|weakness|malaise|cramp)/.test(s)) return 'pain';
-      if (/(rash|itch|lesion|skin|eruption|hive)/.test(s)) return 'skin';
-      return 'general';
-    }
-
-    function renderSymptoms(list){
-      symBox.innerHTML = '';
-      list.slice(0,40).forEach(sym=>{
-        const row = document.createElement('label');
-        row.className = 'sym';
-        const cb = document.createElement('input'); cb.type='checkbox'; cb.value=sym; cb.checked = selected.has(sym);
-        cb.onchange = (e)=>{ if(e.target.checked) selected.add(sym); else selected.delete(sym); updateCounters(); };
-        const t = document.createElement('span'); t.textContent = sym;
-        row.appendChild(cb); row.appendChild(t);
-        symBox.appendChild(row);
-      });
-    }
-
-    function applyFilters(){
-      const q = symSearch.value.trim().toLowerCase();
-      const active = categories.querySelector('[aria-pressed="true"]')?.dataset.cat || 'all';
-      filteredSymptoms = allSymptoms.filter(s=>{
-        const textOK = !q || s.toLowerCase().includes(q);
-        const catOK  = active==='all' || tagCat(s)===active;
-        return textOK && catOK;
-      });
-      renderSymptoms(filteredSymptoms);
-    }
-
-    function severityFromPercent(p){
-      if (p >= 70) return {label:'Severe', cls:'sev-severe'};
-      if (p >= 40) return {label:'Moderate', cls:'sev-moderate'};
-      return {label:'Mild', cls:'sev-mild'};
-    }
-    function updateSeverity(top){
-      if (!top){ severityCard.style.display='none'; return; }
-      const sev = severityFromPercent(top.probability);
-      severityCard.style.display = 'flex';
-      sevBadge.textContent = sev.label;
-      sevBadge.className = 'sev-badge ' + sev.cls;
-      sevTitle.textContent = `Top Disease: ${top.disease}`;
-      sevDetail.textContent = `Probability: ${top.probability.toFixed(2)}%`;
-    }
-
-    function renderTable(top){
-      tableBody.innerHTML = '';
-      top.forEach((row, i)=>{
-        const tr = document.createElement('tr');
-        if (i===0) tr.classList.add('highlight');
-        tr.innerHTML = `<td>${row.disease}</td><td>${row.probability.toFixed(2)}%</td>`;
-        tableBody.appendChild(tr);
-      });
-    }
-
-    function renderChart(top){
-      if (donut) donut.destroy();
-      const labels = top.map(x=>x.disease);
-      const values = top.map(x=>x.probability);
-      const colors = labels.map((_,i)=> palette[i % palette.length]);
-      const ctx = document.getElementById('donutChart').getContext('2d');
-      donut = new Chart(ctx, {
-        type:'doughnut',
-        data:{ labels, datasets:[{ data:values, backgroundColor:colors }] },
-        options:{
-          responsive:true, maintainAspectRatio:false,
-          animation:{ animateRotate:true, animateScale:true, duration:900 },
-          plugins:{ legend:{ display:true, position:'bottom' },
-            tooltip:{ callbacks:{ label:(c)=> `${c.label}: ${c.parsed}%` } } },
-          cutout:'58%'
-        }
-      });
-    }
-
-    /* ====== API ====== */
-    async function fetchSymptomsByAge(age){
-      setStatus('Fetching symptoms…');
-      try{
-        const res = await fetch(`/get_symptoms?age=${age}`);
-        const data = await res.json();
-        if (data.symptoms && data.symptoms.length){
-          allSymptoms = data.symptoms.slice();
-          selected.clear();
-          applyFilters();
-          updateCounters();
-          setStatus(`Loaded ${allSymptoms.length} symptoms.`, 'ok');
-        }else{
-          allSymptoms = [];
-          symBox.innerHTML = '<div class="sub" style="color:var(--muted)">No symptoms available for this age.</div>';
-          setStatus('No symptoms found.', 'warn');
-        }
-      }catch(e){
-        console.error(e);
-        setStatus('Error fetching symptoms.', 'danger');
-      }
-    }
-
-    // UPDATED: consumes { top_prediction, other_predictions }, shows only 4 others, and renders top description
-    async function requestPrediction(){
-  const age = Number(ageEl.value);
-  if ((!age && age !== 0) || isNaN(age)){ setStatus('Enter a valid age.', 'warn'); return; }
-  if (!allSymptoms.length){ setStatus('Load symptoms by entering age first.', 'warn'); return; }
-  if (selected.size===0){ setStatus('Select at least one symptom.', 'warn'); return; }
-
-  setStatus('Predicting…');
-  try{
-    const res = await fetch('/predict', {
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({ age, symptoms: Array.from(selected) })
-    });
-    const data = await res.json();
-    if (data.error){ setStatus(data.error, 'danger'); return; }
-
-    const top = data.top_prediction;
-    const others = (data.other_predictions || []).slice(0,4);
-
-    // Update severity UI
-    updateSeverity(top);
-
-    // Insert top disease description
-    const descBox = document.getElementById('diseaseDescription');
-    if (descBox){
-      descBox.innerHTML = top && top.description
-        ? `<p style="margin:8px 0; font-size:.95rem; line-height:1.4;">${top.description}</p>`
-        : '';
-    pdfBtn.style.display = "inline-block";
-    }
-
-    // Render table and chart
-    renderTable(others);
-    renderChart([top, ...others]);
-
-    // NEW: Update Care Guidance
-    updateCareGuidance(top);
-    updateRecoverySection(top, age);
-
-    setStatus('', '');
-  }catch(e){
-    console.error(e);
-    setStatus('Prediction failed.', 'danger');
-  }
-}
-
-function updateCareGuidance(top){
-  const careSection = document.getElementById("care-guidance");
-  const remediesBtn = document.getElementById("remedies-btn");
-  const suggestionBtn = document.getElementById("suggestion-btn");
-  const careOutput = document.getElementById("care-output");
-
-  if(!top || !top.disease){ careSection.style.display = "none"; return; }
-
-  careSection.style.display = "block";
-  careOutput.style.display = "none"; // always hide at first
-
-  const severity = (top.severity || "mild").toLowerCase();
-  const remedies = top.remedies || [];
-  const suggestion = top.suggestion || "No suggestion available.";
-
-  if(severity === "mild" || severity === "moderate"){
-    remediesBtn.style.display = "inline-block";
-    suggestionBtn.style.display = "inline-block";
-  }else{
-    remediesBtn.style.display = "none";
-    suggestionBtn.style.display = "inline-block";
-  }
-
-  remediesBtn.onclick = () => {
-    if(remedies.length){
-      careOutput.innerHTML =`<ol style= "font-weight: 600;">${remedies.map(r=>`<li>${r}</li>`).join('')}</ol>`;
-    }else{
-      careOutput.innerHTML = `<em>No home remedies available.</em>`;
-    }
-    careOutput.style.display = "block"; // show when clicked
-  };
-
-  suggestionBtn.onclick = () => {
-    careOutput.innerHTML = `<p style="font-weight: 600;">${suggestion}</p>`;
-    careOutput.style.display = "block"; // show when clicked
-  };
-}
-let recoveryData = null;
-
-// Load recovery JSON from Flask route
-async function loadRecoveryData(){
-  if(!recoveryData){
-    try{
-      const res = await fetch("/get_recovery"); // Flask must serve this
-      recoveryData = await res.json();
-    }catch(e){
-      console.error("Failed to load recovery data", e);
-    }
-  }
-  return recoveryData;
-}
-function updateRecoverySection(top, age){
-  const card = document.getElementById("recovery-card");
-  const btn = document.getElementById("recoveryBtn");
-  const out = document.getElementById("recoveryOutput");
-
-  if(!top || !top.disease){ 
-    card.style.display="none"; 
-    return; 
-  }
-
-  card.style.display = "block";   // 👈 makes the button visible
-  out.style.display = "none";
-
-  btn.onclick = async () =>{
-    const data = await loadRecoveryData();
-    const grp = groupFromAge(age).charAt(0).toUpperCase()+groupFromAge(age).slice(1); 
-    const sev = (top.severity || "mild").toLowerCase();
-
-    try{
-      const rec = data[grp][top.disease][sev].recovery;
-      out.innerHTML = `
-      <p style="margin:6px 0; font-size:1rem; line-height:1.6; font-weight:500; color:#0c2d3d;">
-        For <strong>${top.disease}</strong> in a 
-        <strong>${grp}</strong> patient with 
-        <strong>${sev.charAt(0).toUpperCase() + sev.slice(1)}</strong> severity, 
-        the expected recovery period is typically 
-        <strong style="color:#1e8d6d;">${rec.min_days} to ${rec.max_days} days</strong>.
-      </p>
-    `;
-    }catch(err){
-      out.textContent = "Recovery info not available.";
-    }
-    out.style.display = "block";
-  };
-}
-
-    /* ====== Events ====== */
-    function onAgeInput(){
-      const a = Number(ageEl.value||0);
-      if ((!a && a!==0) || isNaN(a)) return;
-      fetchSymptomsByAge(a);
-      updateCounters();
-    }
-    ageEl.addEventListener('input', debounce(onAgeInput, 350));
-    symSearch.addEventListener('input', applyFilters);
-
-    categories.addEventListener('click', (e)=>{
-      if (!e.target.classList.contains('chip')) return;
-      [...categories.querySelectorAll('.chip')].forEach(b=> b.setAttribute('aria-pressed','false'));
-      e.target.setAttribute('aria-pressed','true');
-      applyFilters();
-    });
-
-    predictBtn.addEventListener('click', requestPrediction);
-    resetBtn.addEventListener('click', () => {
-  // Clear selected symptoms
-  selected.clear();
-  symBox.querySelectorAll('input[type=checkbox]').forEach(cb => cb.checked = false);
-  updateCounters();
-
-  // Reset status line
-  setStatus('', '');
-
-  // Clear disease description
-  const descBox = document.getElementById('diseaseDescription');
-  if (descBox) descBox.innerHTML = '';
-
-  // Hide severity card
-  const severityCard = document.getElementById('severityCard');
-  severityCard.style.display = "none";
-
-  // Reset summary metrics
-  document.getElementById('ageGroupK').textContent = '—';
-  document.getElementById('symCountK').textContent = '0';
-  document.getElementById('modelNameK').textContent = '—';
-
-  // Reset results table
-  const tableBody = document.querySelector('#resultTable tbody');
-  tableBody.innerHTML = '<tr><td colspan="2" class="sub" style="color:var(--muted)">No results yet.</td></tr>';
-
-  // Destroy or clear the chart
-  if (donut) {
-    donut.destroy();
-    donut = null;
-  }
-  const chartCanvas = document.getElementById('donutChart');
-  const ctx = chartCanvas.getContext('2d');
-  ctx.clearRect(0, 0, chartCanvas.width, chartCanvas.height);
-
-  // Hide Care Guidance section
-  const careSection = document.getElementById("care-guidance");
-  if (careSection) careSection.style.display = "none";
-
-  // Hide Recovery section
-  const recoveryCard = document.getElementById("recovery-card");
-  if (recoveryCard) recoveryCard.style.display = "none";
-
-  // Hide PDF button again
-  pdfBtn.style.display = "none";
-});
-
-    pdfBtn.addEventListener('click', ()=> window.print());
-  </script>
+  <!-- External JS (served by Flask static/) -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
